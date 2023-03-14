@@ -7,8 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-   Email: <input type="email">
-   password:<input type="password"><br>
-   <input type="submit" value="envoyer">
+    <form name="f">
+   Email: <input type="email" name="t1">
+   password:<input type="password" name="t2"><br>
+   <input type="submit" value="envoyer" onclick="Envoyer()">
+</form>
+   <script language="javascript">
+    function Envoyer()
+    {
+
+        if (document.f.t1.value=="")
+        {
+            alert("saisir votre email");
+        }
+        if (document.f.t1.indexOf('@')=="-1")
+        {
+            alert("ce n'est pas une adresse electronique");
+        }
+        if (document.f.t2.value=="")
+    {
+        alert("veillez saisir votre mot de passe svp");
+    }
+        
+    }
+</script>
 </body>
 </html>
