@@ -37,15 +37,7 @@ ul li ul li {
 ul li:hover ul li{
   display: block;
 }
-<div class="card" style="width: 18rem;">
-<img src="C:\Users\SS TECH\Desktop\projet mr tarek\produit cosmetique\images/18.JPEG" class="card-img-top" width="100px" height="150">
-<div class="card-body">
-           <h5 class="card-title">ROUGE COCO </h5>
-           <p class="card-text">Marque: CHANEL</p>
-           <p class="card-text"> N°482 </p>
-           <p class="card-text">prix : 139 dinars</p>
-           <a href="../menu/contact.html" ><input type="submit" value="contact" ></a>
-        </div> <br><br >
+
           
 
 

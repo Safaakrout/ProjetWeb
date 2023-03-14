@@ -6,23 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form name="f">
-   Email: <input type="email" name="t1">
-   password:<input type="password" name="t2"><br>
-   <input type="submit" value="envoyer" onclick="Envoyer()">
-</form>
-   <script language="javascript">
-    function Envoyer()
+<script language="javascript">
+    function verif()
     {
 
-        if (document.f.t1.value=="")
+        if ((document.f.t1.value=="") || (document.f.t1.indexOf('@')=="-1"))
         {
             alert("saisir votre email");
-        }
-        if (document.f.t1.indexOf('@')=="-1")
-        {
-            alert("ce n'est pas une adresse electronique");
+            alert (" absent de @");
         }
         if (document.f.t2.value=="")
     {
@@ -31,5 +22,12 @@
         
     }
 </script>
+<body>
+    <form name="f">
+   Email: <input type="email" name="t1">
+   password:<input type="password" name="t2"><br>
+   <input type="submit" value="envoyer" onclick="verif()">
+</form>
+   
 </body>
 </html>
