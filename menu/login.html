@@ -6,9 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script language="javascript">
+    function verif()
+    {
+
+        if ((document.f.t1.value=="") || (document.f.t1.indexOf('@')=="-1"))
+        {
+            alert("saisir votre email");
+            alert (" absent de @");
+        }
+        if (document.f.t2.value=="")
+    {
+        alert("veillez saisir votre mot de passe svp");
+    }
+        
+    }
+</script>
 <body>
-   Email: <input type="email">
-   password:<input type="password"><br>
-   <input type="submit" value="envoyer">
+    <form name="f">
+   Email: <input type="email" name="t1">
+   password:<input type="password" name="t2"><br>
+   <input type="submit" value="envoyer" onclick="verif()">
+</form>
+   
 </body>
 </html>
